@@ -1,0 +1,25 @@
+﻿﻿<bg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd">
+    <scrollable-settings-container preferred-width="120" preferred-height="85" child-expand-height="true" min-height="80">
+        <toggle-setting label="Enabled" value='Enabled' apply-on-change='true'/>
+        <string-setting label="Text" id="TextSetting" value="TextConfig" apply-on-change='true'/>
+        <color-setting label="Color" value='TextColor' apply-on-change='true'/>
+        <increment-setting label="Text Size" value="TextSize" increment="0.5" digits='1' apply-on-change='true'/>
+
+        <tab-selector tab-tag="PosRot" size-delta-y='5.5' size-delta-x='-60'/>
+            
+        <tab tags="PosRot" tab-name="Position">
+            <vertical vertical-fit="MinSize" horizontal-fit="PreferredSize" anchor-pos-y="-8" min-height="18">
+                <increment-setting label="Position X" increment='0.1' digits='1' value='PosX' apply-on-change='true'/>
+                <increment-setting label="Position Y" increment='0.1' digits='1' value='PosY' apply-on-change='true'/>
+                <increment-setting label="Position Z" increment='0.1' digits='1' value='PosZ' apply-on-change='true'/>
+            </vertical>
+        </tab>
+        <tab tags="PosRot" tab-name="Rotation">
+            <vertical vertical-fit="MinSize" horizontal-fit="PreferredSize" anchor-pos-y="-8" min-height="18">
+                <increment-setting label="Rotation X" increment='0.1' digits='1' value='RotX' apply-on-change='true'/>
+                <increment-setting label="Rotation Y" increment='0.1' digits='1' value='RotY' apply-on-change='true'/>
+                <increment-setting label="Rotation Z" increment='0.1' digits='1' value='RotZ' apply-on-change='true'/>
+            </vertical>
+        </tab>
+    </scrollable-settings-container>
+</bg>
